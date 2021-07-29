@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Triangle  Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    
+    
+    
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
+          <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../images/logo.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../images/logo-mini.svg" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-sort-variant"></span>
+          </button>
+        </div>  
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-4 w-100">
+          <li class="nav-item nav-search d-none d-lg-block w-100">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search">
+                  <i class="mdi mdi-magnify"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown mr-1">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-message-text mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                  <h6 class="ellipsis font-weight-normal">John Doe
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    The meeting is cancelled
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                  <h6 class="ellipsis font-weight-normal">John Doe
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    New product launch
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                  <h6 class="ellipsis font-weight-normal"> John Doe
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Upcoming board meeting
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-4">
+            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="mdi mdi-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                  <div class="item-icon bg-success">
+                    <i class="mdi mdi-information mx-0"></i>
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h6 class="font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                  <div class="item-icon bg-warning">
+                    <i class="mdi mdi-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h6 class="font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                  <div class="item-icon bg-info">
+                    <i class="mdi mdi-account-box mx-0"></i>
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h6 class="font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../../images/faces/face5.jpg" alt="profile"/>
+              <span class="nav-profile-name">John Doe</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="mdi mdi-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="mdi mdi-logout text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    
+    
+    
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="mdi mdi-home menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#customer" aria-expanded="false" aria-controls="auth">
+              <i class="mdi mdi-account-multiple menu-icon"></i>
+              <span class="menu-title">Customer</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="customer">
+              <ul class="nav flex-column sub-menu" style="list-style-type: none;">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/new_customer.html">  New Customer</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/edit_customer.html"> Edit Customer</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/basic-table.html"> View all Customer</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/view_customer.html"> View Customer</a></li>
+                
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#supplier" aria-expanded="false" aria-controls="auth">
+              <i class="mdi mdi mdi-nature-people menu-icon"></i>
+              <span class="menu-title">Supplier</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="supplier">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/new_supplier.html">  New Supplier </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/edit_supplier.html"> Edit Supplier</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/view_all_supplier.html"> View all Supplier </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/view_supplier.html"> View Supplier</a></li>
+        
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#sales" aria-expanded="false" aria-controls="auth">
+              <i class="mdi mdi-cart-plus menu-icon"></i>
+              <span class="menu-title">Sales</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="sales">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/new_sales.html">  New Sales</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/edit_sales.html"> Edit Sales</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/view_all_sales.html"> View all Sales </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/view_sales.html"> View Sales</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#purchase" aria-expanded="false" aria-controls="auth">
+              <i class="mdi mdi-database-plus menu-icon"></i>
+              <span class="menu-title">Purchases</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="purchase">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class=" nav-link" href="../../pages/forms/new_purchase.html">  New Purchase</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/edit_purchase.html"> Edit Purchase</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/view_all_purchasehtml"> View all Purchase </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/view_purchase.html"> View Purchase</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#product" aria-expanded="false" aria-controls="auth">
+              <i class="mdi mdi-cart menu-icon"></i>
+              <span class="menu-title">Product</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="product">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/new_product.html">  New Product </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/edit_product.html"> Edit Product</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/view_all_product.html"> View all Product </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/view_product.html"> View Product</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#invoice" aria-expanded="false" aria-controls="invoice">
+              <i class="mdi mdi-cloud-print menu-icon"></i>
+              <span class="menu-title">Invoice</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="invoice">
+              <ul class="nav flex-column sub-menu">
+                
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/sales_invoice.html"> Sales Invoice </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/forms/purchase_invoice.html"> Purchases Invoice</a></li>
+                </ul>
+            </div>
+          </li>
+         
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">        
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">New Supplier Registration</h4>
+                  <p class="card-description">
+                    Please fill all the fields
+                  </p>
+                  <form class="forms">
+                    
+                    <div class="form-group row">
+                      <div class="col-md-6 row"> 
+                      <label for="supplierId" class="col-sm-3 col-form-label">Supplier Id:</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="supplierId" placeholder="supplier Id">
+                      </div>
+                      </div>
+                      <div class="col-md-6 row"> 
+                        <label for="date" class="col-sm-3 col-form-label">Date:</label>
+                        <div class="col-sm-9">
+                          <input type="date" class="form-control" id="date" placeholder="Date of Registration">
+                        </div>
+                        </div>
+                        <div class="col-md-6 row"> 
+                          <label for="companyName" class="col-sm-3 col-form-label">Company</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" id="companyName" placeholder="Name of Organization">
+                          </div>
+                          </div>
+                      <div class="col-md-6 row"> 
+                        <label for="companyEmail" class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                          <input type="email" class="form-control" id="companyEmail" placeholder="Company's Email">
+                        </div>
+                    </div>
+                    <div class="col-md-12 row"> 
+                      <p class=" card-description">
+                      Contact Person
+                    </p>
+                    
+                  </div>
+                    
+                  <div class="col-md-6 row"> 
+                    <label for="lastName" class="col-sm-3 col-form-label">Last Name</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                    </div>
+                    <div class="col-md-6 row"> 
+                      <label for="firstName" class="col-sm-3 col-form-label">First Name</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                      </div>
+                      </div>
+                      <div class="col-md-6 row"> 
+                        <label for="otherName" class="col-sm-3 col-form-label">Other Name</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="otherName" placeholder="Other Name">
+                        </div>
+                        </div>
+                        <div class="col-md-6 row"> 
+                          
+                          </div>
+                          <div class="col-md-6 row"> 
+                            <label for="houseNo" class="col-sm-3 col-form-label">House No</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" id="houseNo" placeholder="House Number">
+                            </div>
+                            </div>
+                            <div class="col-md-6 row"> 
+                              <label for="city" class="col-sm-3 col-form-label">City</label>
+                              <div class="col-sm-9">
+                                <input type="text" class="form-control" id="city" placeholder="City of Residence">
+                              </div>
+                              </div>
+                              <div class="col-md-12 form-group row"> 
+                                <label for="street" class="col-sm-3 col-form-label">Street</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" id="street" placeholder="Street">
+                                </div>
+                                </div>
+                                <div class="col-md-6 row"> 
+                                  <label for="state" class="col-sm-3 col-form-label">State</label>
+                                  <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="state" placeholder="State of Residence">
+                                  </div>
+                                  </div>
+                                  <div class="col-md-6 row"> 
+                                    <label for="country" class="col-sm-3 col-form-label">Last Name</label>
+                                    <div class="col-sm-9">
+                                      <input type="text" class="form-control" id="country" placeholder="Country of residence">
+                                    </div>
+                                    </div>
+                    
+                 
+                    </div>
+                  
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020<a href="#" target="_blank">Buino Technology Ventures</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Inventory Solution<i class="mdi mdi-shopping"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../js/file-upload.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
